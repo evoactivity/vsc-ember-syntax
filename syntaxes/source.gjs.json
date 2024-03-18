@@ -4,23 +4,14 @@
   "scopeName": "source.gjs",
   "patterns": [
     {
-      "include": "#main"
+      "include": "#inlineTemplatesAndHandlebars"
     },
     {
       "include": "source.js"
     }
   ],
-  "injections": {
-    "L:source.gjs -comment -(string -meta.embedded)": {
-      "patterns": [
-        {
-          "include": "#main"
-        }
-      ]
-    }
-  },
   "repository": {
-    "main": {
+    "inlineTemplatesAndHandlebars": {
       "patterns": [
         {
           "name": "meta.js.embeddedTemplateWithoutArgs",

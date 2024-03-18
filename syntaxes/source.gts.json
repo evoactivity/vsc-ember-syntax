@@ -4,23 +4,14 @@
   "scopeName": "source.gts",
   "patterns": [
     {
-      "include": "#main"
+      "include": "#inlineTemplatesAndHandlebars"
     },
     {
       "include": "source.ts"
     }
   ],
-  "injections": {
-    "L:source.gts -comment -(string -meta.embedded)": {
-      "patterns": [
-        {
-          "include": "#main"
-        }
-      ]
-    }
-  },
   "repository": {
-    "main": {
+    "inlineTemplatesAndHandlebars": {
       "patterns": [
         {
           "name": "meta.js.embeddedTemplateWithoutArgs",
